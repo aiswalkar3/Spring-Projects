@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;parent-app-context.xml&apos; to &apos;SpringBeanCreationNotificationDemo/src/spring&apos;&#x0D;&#x0A;- Original project: &apos;SpringApplicationContextNesting&apos;&#x0D;&#x0A;- Destination element: &apos;SpringBeanCreationNotificationDemo/src/spring&apos;&#x0D;&#x0A;- Original element: &apos;parent-app-context.xml&apos;" description="Copy file" destination="=SpringBeanCreationNotificationDemo/src&lt;spring" element1="src/spring/parent-app-context.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1600305181674" units="0" version="1.0"/>
+</session>

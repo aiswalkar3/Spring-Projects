@@ -1,0 +1,22 @@
+package com.SpringBeanNamingTest;
+
+import java.util.Map;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringBeanNamingTest {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load(new ClassPathResource("spring/app-config-2.xml"));
+		context.refresh();
+		
+		String s1Bean =  
+		
+		Map<String,String> beans = context.getBeansOfType(String.class);
+		
+		beans.entrySet().stream().forEach(entry -> System.out.println(entry.getKey()));
+		
+		context.close();
+	}
+}

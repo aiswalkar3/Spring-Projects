@@ -1,0 +1,12 @@
+package com.EECS.SpringLookupMethodInjectionAnnotations;
+
+@Component()
+public abstract class AbstractLookupDemoBean implements MethodInjectionDemoBean{
+	public abstract ProductType getProductType();
+	
+	@Override
+	public void performCheck()
+	{
+		getProductType().checkProductType();
+	}
+}

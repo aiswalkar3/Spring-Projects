@@ -1,0 +1,32 @@
+package com.EECS.SpringBeanNameAwareDemo;
+
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+class ProductBeanAware implements BeanNameAware{
+	private String name;
+	
+	public void setBeanName(String beanName)
+	{
+		name = beanName;
+	}
+	
+	public void getProduct()
+	{
+		System.out.println("Product "+ name);
+	}
+}
+
+public class ProductBeanAwareDemo
+{
+	public static void main(String []args)
+	{
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load(new ClassPathResource("spring/app-config.xml"));
+		context.refresh();
+		ProductBeanAwareDemo bean = context.getBean("productOne", ProductBeanAwareDemo.class);
+		bean.getProduct();
+		context.close();
+	}
+}

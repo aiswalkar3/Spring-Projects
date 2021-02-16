@@ -1,0 +1,14 @@
+package com.EECS.LooselyCoupled;
+import java.util.Properties;
+
+public class MessageSupportingFactory {
+	private static MessageSupportingFactory instance;
+	
+	private Properties props;
+	private MessageGetter getter;
+	private MessageDisplayer displayer;
+	
+	
+	
+	
+}

@@ -1,0 +1,6 @@
+package com.EECS.SpringLookupMethodInjectionDemo;
+
+public class SetterInjectionLookupDemoBean {
+	private ProductType productType;
+	
+}

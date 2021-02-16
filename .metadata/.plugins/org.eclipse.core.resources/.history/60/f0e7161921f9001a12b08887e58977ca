@@ -1,0 +1,11 @@
+package com.EECS.SpringBeanInitializationDemoWithConfigurationClass;
+
+public class ProductBeanConfigDemo {
+	
+	
+	static class ProductBeanConfig{
+		
+		
+		
+	}
+}

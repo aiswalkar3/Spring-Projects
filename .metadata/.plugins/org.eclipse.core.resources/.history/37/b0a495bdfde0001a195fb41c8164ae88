@@ -1,0 +1,7 @@
+package com.EECS.SpringMethodReplacementDemo;
+
+public class MethodReplacementDemo {
+	public static void main(String[] args) {
+		
+	}
+}

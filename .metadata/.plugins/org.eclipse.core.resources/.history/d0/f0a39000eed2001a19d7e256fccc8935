@@ -1,0 +1,7 @@
+package com.EECS.LooselyCoupled;
+
+public class MessageSupportingFactory {
+	private static MessageSupportingFactory 
+	
+	
+}

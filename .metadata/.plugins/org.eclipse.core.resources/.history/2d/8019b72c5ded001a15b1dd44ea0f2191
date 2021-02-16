@@ -1,0 +1,11 @@
+package com.EECS.SpringDependsOnDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class Product implements ApplicationContextAware{
+	ApplicationContext context;
+	
+	
+
+}

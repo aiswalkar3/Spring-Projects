@@ -1,0 +1,20 @@
+package com.EECS.SpringBeanCreationNotificationDemo;
+
+public class Product {
+	private static final String DEFAULT_NAME = "Domestic Washing Product";
+	
+	private String name;
+	private int age = Integer.MIN_VALUE;
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	
+}

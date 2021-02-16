@@ -1,0 +1,16 @@
+package com.EECS.SpringLookupMethodInjectionAnnotations;
+
+import org.springframework.beans.factory.annotation.Lookup;
+import org.springframework.stereotype.Component;
+
+@Component("abstractLookupDemoBean")
+public class AbstractLookupDemoBean implements MethodInjectionDemoBean{
+	@Lookup("productType")
+	public abstract ProductType getProductType();
+	
+	@Override
+	public void performCheck()
+	{
+		getProductType().checkProductType();
+	}
+}

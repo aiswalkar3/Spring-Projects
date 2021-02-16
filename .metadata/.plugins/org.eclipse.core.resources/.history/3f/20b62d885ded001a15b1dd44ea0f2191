@@ -1,0 +1,5 @@
+package com.EECS.SpringDependsOnDemo;
+
+public class ProductLineOfBusiness {
+	String lineOfBusiness = "";
+}

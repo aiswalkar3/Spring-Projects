@@ -1,0 +1,6 @@
+package com.EECS.SpringAutowiringAnnotations;
+
+@C
+public interface Product {
+
+}

@@ -1,0 +1,7 @@
+package com.EECS.SpringDisposableInterfaceDemo;
+
+import org.springframework.beans.factory.DisposableBean;
+
+public class SpringDisposableInterfaceDemo implements InitializingBean,DisposableBean{
+
+}

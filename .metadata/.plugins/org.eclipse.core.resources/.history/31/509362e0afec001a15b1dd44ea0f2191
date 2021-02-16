@@ -1,0 +1,8 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+public class Product {
+	private String name = "";
+	
+	
+	
+}

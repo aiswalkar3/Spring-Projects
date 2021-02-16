@@ -1,0 +1,8 @@
+package com.EECS.SpringBeanDestructionMethodDemo;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class SpringBeanDestructionMethodDemo implements InitializingBean{
+	
+
+}

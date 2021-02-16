@@ -1,0 +1,5 @@
+package com.EECS.SpringBeanDestructionWithJavaConfiguration;
+
+public class SpringBeanDestructionWithJavaConfiguration {
+	
+}

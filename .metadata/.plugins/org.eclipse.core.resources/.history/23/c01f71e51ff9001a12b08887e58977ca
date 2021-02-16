@@ -1,0 +1,5 @@
+package com.EECS.SpringBeanInitializationDemoWithConfigurationClass;
+
+public class Product {
+
+}

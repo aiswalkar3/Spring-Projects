@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context = "http://www.springframework.org/schema/context"
+xsi:schemaLocation = "http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id = "shaDigest" class = "com.EECS.SpringFactoryBeanDemo.MessageDigestFactoryBean">
+	<property name = "algorithmName" value = "SHA1"/>
+</bean>
+
+<bean id = "defaultDigest" class = "com.EECS.SpringFactoryBeanDemo.MessageDigestFactoryBean"/>
+
+<bean id = "digester" class = "com.EECS.SpringFactoryBeanDemo.MessageDigester">
+	<property name = "digest1" ref = "shaDigest"/>
+	<property name = "digest2" ref = "defaultDigest"/>
+</bean>
+</beans>

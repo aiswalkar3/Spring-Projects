@@ -1,0 +1,23 @@
+package com.EECS.SpringAutowiringDemo;
+
+public class Target {
+	private Product productFirst;
+	private Product productSecond;
+	private ProductType productType;
+	
+	public Target()
+	{
+		
+	}
+	
+	public Target(Product product)
+	{
+		System.out.println("Target(Product) called");
+	}
+	
+	public Target(Product product, ProductType productType)
+	{
+		System.out.println("Target(Product, ProductType) called");
+	}
+	
+}

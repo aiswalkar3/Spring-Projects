@@ -1,0 +1,18 @@
+package com.EECS.LooselyCoupled;
+
+public class StandardOutputMessageDisplayer implements MessageDisplayer{
+	void setMessageGetter(MessageGetter getter)
+	{
+		
+	}
+	
+	MessageGetter getMessageGetter();
+	{
+		
+	}
+	
+	void displayMessage();
+	{
+		
+	}
+}

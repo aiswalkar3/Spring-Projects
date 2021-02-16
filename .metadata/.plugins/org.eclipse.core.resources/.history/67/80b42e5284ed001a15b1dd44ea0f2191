@@ -1,0 +1,6 @@
+package com.EECS.SpringAutowiringAnnotations;
+
+@Component
+public class ProductImplOne implements Product{
+	
+}

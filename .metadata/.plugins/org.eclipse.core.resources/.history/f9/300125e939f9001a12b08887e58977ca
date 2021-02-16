@@ -1,0 +1,11 @@
+package com.EECS.SpringBeanDestructionWithJavaConfiguration;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringBeanDestructionWithJavaConfiguration {
+	public static void main(String []args)
+	{
+		
+	}
+}

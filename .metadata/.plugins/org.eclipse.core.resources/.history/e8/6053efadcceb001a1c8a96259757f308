@@ -1,0 +1,29 @@
+package com.SpringBeanNamingTest;
+
+import java.util.Map;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringBeanNamingTest {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load(new ClassPathResource("spring/app-config-2.xml"));
+		context.refresh();
+		
+		String s1Bean = context.getBean("apple",String.class);
+		String s2Bean = context.getBean("banana",String.class);
+		String s3Bean = context.getBean("orange",String.class);
+		String s4Bean = context.getBean("grapes",String.class);
+		String s5Bean = context.getBean("ananas",String.class);
+		String s6Bean = context.getBean("app",String.class);
+		
+		System.out.println();
+		
+		Map<String,String> beans = context.getBeansOfType(String.class);
+		
+		beans.entrySet().stream().forEach(entry -> System.out.println(entry.getKey()));
+		
+		context.close();
+	}
+}

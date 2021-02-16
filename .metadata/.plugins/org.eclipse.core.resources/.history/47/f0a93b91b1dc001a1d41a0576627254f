@@ -1,0 +1,10 @@
+package com.EECS.XMLUnitInjectionDemo;
+
+public class ProductType {
+	private String productType;
+	
+	public ProductType()
+	{
+		
+	}
+}

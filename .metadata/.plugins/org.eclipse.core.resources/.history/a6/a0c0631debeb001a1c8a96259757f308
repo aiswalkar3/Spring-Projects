@@ -1,0 +1,9 @@
+package com.SpringBeanNamingAnnotations;
+
+public class SpringBeanNamingAnnotationsDemo {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

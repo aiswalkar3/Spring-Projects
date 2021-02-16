@@ -1,0 +1,8 @@
+package com.EECS.CollectionsInjectionDemo;
+
+public class ProductType {
+	private String productType = "Domesti small product";
+	
+	
+	
+}

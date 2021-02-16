@@ -1,0 +1,6 @@
+package com.EECS.LooselyCoupled;
+
+public class HelloWorldMessageGetter implements MessageGetter
+{
+	
+}

@@ -1,0 +1,19 @@
+package com.EECS.ApplicationContextNesting;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class ApplicationContextNestingDemo {
+	public static void main(String []args)
+	{
+		GenericXmlApplicationContext parentContext = new GenericXmlApplicationContext();
+		parentContext.load(new ClassPathResource("spring/parent-app-context.xml"));
+		parentContext.refresh();
+		
+		GenericXmlApplicationContext childContext = new GenericXmlApplicationContext();
+		childContext.load(new ClassPathResource("spring/child-app-context.xml"));
+		childContext.setParent(parentContext);
+		childContext.refresh();
+		
+	}
+}

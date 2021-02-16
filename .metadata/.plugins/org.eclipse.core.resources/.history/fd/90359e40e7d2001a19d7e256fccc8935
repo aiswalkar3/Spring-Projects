@@ -1,0 +1,8 @@
+package com.EECS.LooselyCoupled;
+
+public class HelloWorldLooselyCoupled {
+	public static void main(String []args)
+	{
+		HelloWorldMessageGetter 
+	}
+}

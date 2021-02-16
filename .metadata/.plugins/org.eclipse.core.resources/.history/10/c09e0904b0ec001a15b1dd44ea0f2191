@@ -1,0 +1,14 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+import org.springframework.stereotype.Component;
+
+@Component("nonSingleton")
+@Scope("")
+public class Product {
+	private String name = "unknown product";
+	
+	public Product(String name)
+	{
+		
+	}
+}

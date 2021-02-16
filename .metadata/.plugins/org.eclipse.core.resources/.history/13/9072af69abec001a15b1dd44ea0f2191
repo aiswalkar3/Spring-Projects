@@ -1,0 +1,12 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+public class Singleton {
+	private static Singleton instance;
+	
+	static {
+		instance = ne Singleton();
+	}
+	
+	
+	
+}

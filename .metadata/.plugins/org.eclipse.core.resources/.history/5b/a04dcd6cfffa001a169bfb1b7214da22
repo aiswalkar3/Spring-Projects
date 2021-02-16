@@ -1,0 +1,11 @@
+package com.EECS.SpringFactoryBeanDemo;
+
+public class MessageDigester {
+	private MessageDigest digest1;
+	private MessageDigest digest2;
+	
+	public void setDigest1(MessageDigest digest1)
+	{
+		this.digest1 = digest1;
+	}
+}

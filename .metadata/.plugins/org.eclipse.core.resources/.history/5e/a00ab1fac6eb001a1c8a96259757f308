@@ -1,0 +1,10 @@
+package com.SpringBeanNamingTest;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class SpringBeanNamingTest {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		
+	}
+}

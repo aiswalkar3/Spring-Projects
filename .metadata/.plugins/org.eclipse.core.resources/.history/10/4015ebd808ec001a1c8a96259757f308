@@ -1,0 +1,14 @@
+package com.EECS.SpringAliasForDemo;
+
+import org.springframework.stereotype.Component;
+
+@Component("Industrial Product")
+@Award(prize = {"platinum standard product","gold standard product"})
+public class Product {
+	private String productLOB = "";
+	
+	public void product()
+	{
+		System.out.println(productLOB);
+	}
+}

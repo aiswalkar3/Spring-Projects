@@ -1,0 +1,14 @@
+package com.EECS.SpringLookupMethodInjectionDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class LookupDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load("spring/app-context.xml");
+		context.refresh();
+		
+		MethodInjectionDemoBean abstractDempBean =  context
+		
+	}
+}

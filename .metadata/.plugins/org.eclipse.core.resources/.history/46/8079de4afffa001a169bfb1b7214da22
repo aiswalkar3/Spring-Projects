@@ -1,0 +1,6 @@
+package com.EECS.SpringFactoryBeanDemo;
+
+public class MessageDigester {
+	private MessageDigest digest1;
+	
+}

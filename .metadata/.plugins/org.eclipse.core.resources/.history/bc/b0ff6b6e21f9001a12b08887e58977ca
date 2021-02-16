@@ -1,0 +1,20 @@
+package com.EECS.SpringBeanInitializationDemoWithConfigurationClass;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+
+public class ProductBeanConfigDemo {
+	
+	@Configuration
+	static class ProductBeanConfig{
+		
+		@Lazy
+		@Bean(initMethod = "init")
+		Product productOne()
+		{
+			Product productOne = new Product();
+			
+		}
+	}
+}

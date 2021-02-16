@@ -1,0 +1,8 @@
+package com.EECS.SpringAliasForDemo;
+
+@Award
+public @interface Trophy {
+	@AliasFor(annotation = Award.class, attribute = "value")
+	String[] 
+	
+}

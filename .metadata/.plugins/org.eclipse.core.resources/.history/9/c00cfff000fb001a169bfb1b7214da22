@@ -1,0 +1,8 @@
+package com.EECS.SpringFactoryBeanDemo;
+
+public class MessageDigestDemo {
+	public static void main(String []args)
+	{
+		
+	}
+}

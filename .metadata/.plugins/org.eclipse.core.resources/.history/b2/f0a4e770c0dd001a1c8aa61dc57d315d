@@ -1,0 +1,15 @@
+package com.EECS.SpringCollectionsInjectionAnnotationsDemo;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class CollectionsInjectionAnnotationsDemo {
+	private List list;
+	private Set set;
+	private Properties props;
+	private Map<String, Object> map;
+	
+	
+}

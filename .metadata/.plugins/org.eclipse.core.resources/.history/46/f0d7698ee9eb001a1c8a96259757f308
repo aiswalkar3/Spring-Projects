@@ -1,0 +1,11 @@
+package com.SpringBeanNamingAnnotations;
+
+@Component
+public class Product {
+	private String product = "Indutrial Product";
+	
+	private void getProduct()
+	{
+		System.out.println(product);
+	}
+}

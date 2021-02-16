@@ -1,0 +1,11 @@
+package com.EECS.SpringFactoryBeanDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MessageDigestDemo {
+	public static void main(String []args)
+	{
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load();
+	}
+}

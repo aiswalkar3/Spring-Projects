@@ -1,0 +1,6 @@
+package com.EECS.LooselyCoupled;
+
+public interface MessageDisplayer {
+	void displayMessage();
+	
+}

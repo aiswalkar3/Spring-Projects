@@ -1,0 +1,29 @@
+package com.EECS.SpringBeanDestructionWithJavaConfiguration;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringBeanDestructionWithJavaConfiguration {
+	
+	static class SpringBeanDestructionMethodConfig
+	{
+		SpringBeanDestructionMethodDemo disposableBean()
+		{
+			
+		}
+		
+	}
+	
+	public static void main(String []args)
+	{
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load(new ClassPathResource("spring/app-context.xml"));
+		context.refresh();
+		
+		SpringBeanDestructionMethodDemo bean = context.getBean("destroyingBean", 
+				SpringBeanDestructionMethodDemo.class);
+		System.out.println("Calling destroy()");
+		context.destroy();
+		System.out.println("Called destroy()");
+	}
+}

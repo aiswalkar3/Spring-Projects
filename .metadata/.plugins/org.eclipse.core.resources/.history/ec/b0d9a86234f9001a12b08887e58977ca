@@ -1,0 +1,16 @@
+package com.EECS.SpringDisposableInterfaceDemo;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class SpringDisposableInterfaceDemo implements InitializingBean,DisposableBean{
+	public void afterPropertiesSet()
+	{
+		
+	}
+	
+	public void destroy()
+	{
+		
+	}
+}

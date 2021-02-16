@@ -1,0 +1,14 @@
+package com.EECS.SpringBeanConfigurationDemo;
+
+public class Product {
+	
+	
+	static class ProductConfig
+	{
+		
+	}
+	
+	private 
+	
+	
+}

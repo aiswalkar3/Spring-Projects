@@ -1,0 +1,8 @@
+package com.EECS.SpringFactoryBeanDemo;
+
+import org.springframework.beans.factory.FactoryBean;
+
+public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, InitializingBean
+{
+	
+}

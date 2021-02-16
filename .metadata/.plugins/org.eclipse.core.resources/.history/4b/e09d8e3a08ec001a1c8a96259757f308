@@ -1,0 +1,9 @@
+package com.EECS.SpringAliasForDemo;
+
+import org.springframework.stereotype.Component;
+
+@Component("Industrial Product")
+@Award(prize = {})
+public class Product {
+
+}

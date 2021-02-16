@@ -1,0 +1,7 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+public class SpringNonSingletonBeanDemo {
+	public static void main(String[] args) {
+		
+	}
+}

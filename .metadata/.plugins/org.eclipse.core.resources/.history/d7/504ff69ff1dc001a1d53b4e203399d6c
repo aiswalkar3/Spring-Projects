@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context = "http://www.springframework.org/schema/context"
+xsi:schemaLocation = "http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id = "productType1" class = "com.EECS.ApplicationContextNesting.ProductType">
+	<property name = "productType" ref = "parentProductType"/>
+</bean>
+
+<bean id = "productType2" class = "com.EECS.ApplicationContextNesting.ProductType">
+	<property name = "productType" ref = "childProductType"/>
+</bean>
+
+<bean id = "productType3" class = "com.EECS.ApplicationContextNesting.ProductType">
+	<property name = "productType">
+		<ref parent = "childProductType"/>
+	</property>
+</bean>
+
+
+</beans>

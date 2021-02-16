@@ -1,0 +1,12 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringNonSingletonBeanDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load(new ClassPathResource("spring/app-cong=fig.xml"))
+		
+	}
+}

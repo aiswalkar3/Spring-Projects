@@ -1,0 +1,11 @@
+package com.EECS.CollectionsInjectionDemo;
+
+public class ProductType {
+	private String productType = "Domestic cleaning product";
+	
+	@Override
+	public String toString()
+	{
+		return "ProductType: {" + productType + "}";
+	}
+}

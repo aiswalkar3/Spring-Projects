@@ -1,0 +1,5 @@
+package com.EECS.SpringLookupMethodInjectionDemo;
+
+public class PoductType {
+	private String productType = "Domestic Cleaning Product";
+}

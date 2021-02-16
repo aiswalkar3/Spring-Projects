@@ -1,0 +1,10 @@
+package com.EECS.SpringApplicationContextAwareDemo;
+
+import java.io.File;
+
+public class SpringDestructiveBean {
+	private File file;
+	private String filePath;
+	
+	
+}

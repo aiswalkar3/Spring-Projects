@@ -1,0 +1,12 @@
+package com.EECS.SpringBeanConfigurationDemo;
+
+import org.springframework.context.annotation.Configuration;
+
+public class Product {
+	
+	@Configuration
+	public static class ProductConfig
+	{
+		
+	}
+}

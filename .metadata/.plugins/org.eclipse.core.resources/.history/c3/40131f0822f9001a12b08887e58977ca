@@ -1,0 +1,39 @@
+package com.EECS.SpringBeanInitializationDemoWithConfigurationClass;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+
+public class ProductBeanConfigDemo {
+	
+	@Configuration
+	static class ProductBeanConfig{
+		@Lazy
+		@Bean(initMethod = "init")
+		Product productOne()
+		{
+			Product productOne = new Product();
+			productOne.setName("Industrial Cleaning Product");
+			productOne.setAge(5);
+			return productOne;
+		}
+		
+		@Lazy
+		@Bean(initMethod = "init")
+		Product productTwo()
+		{
+			Product productTwo = new Product();
+			productTwo.setAge(10);
+			return productTwo;
+		}
+		
+		@Lazy
+		@Bean(initMethod = "init")
+		Product productThree()
+		{
+			Product productThree = new Product();
+			productThree.setName("Domestic Cutting Product");
+			return productThree;
+		}
+	}
+}

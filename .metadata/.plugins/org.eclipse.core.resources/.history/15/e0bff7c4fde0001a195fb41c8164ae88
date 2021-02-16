@@ -1,0 +1,10 @@
+package com.EECS.SpringMethodReplacementDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MethodReplacementDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		
+	}
+}

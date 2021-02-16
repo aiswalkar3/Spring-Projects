@@ -1,0 +1,11 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class SpringNonSingletonBeanDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.EECS.XMLUnitInjectionDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class Product {
+	private ProductType type;
+	
+	public Product(ProductType type)
+	{
+		this.type = type;
+	}
+	
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+	}
+}

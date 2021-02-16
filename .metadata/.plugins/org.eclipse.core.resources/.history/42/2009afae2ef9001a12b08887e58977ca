@@ -1,0 +1,15 @@
+package com.EECS.SpringBeanDestructionMethodDemo;
+
+import java.io.File;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class SpringBeanDestructionMethodDemo implements InitializingBean{
+	private File file;
+	private String filePath;
+
+	public void afterPropertiesSet() throws Exception
+	{
+		System.out.println("Initializing ");
+	}
+}

@@ -1,0 +1,12 @@
+package com.EECS.ApplicationContextNesting;
+
+public class ProductType {
+	private String productType;
+	
+	public void setProductType(String productType)
+	{
+		this.productType = productType;
+	}
+	
+	
+}

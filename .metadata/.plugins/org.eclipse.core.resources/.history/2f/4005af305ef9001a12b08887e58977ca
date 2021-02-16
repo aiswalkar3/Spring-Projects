@@ -1,0 +1,5 @@
+package com.EECS.SpringBeanNameAwareDemo;
+
+public class ProductBeanAware implements BeanNameAware{
+	
+}

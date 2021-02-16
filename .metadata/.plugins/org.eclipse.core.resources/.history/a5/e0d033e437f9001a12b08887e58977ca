@@ -1,0 +1,14 @@
+package com.EECS.SpringDestroyingBeanJSR250Demo;
+
+import java.io.File;
+
+public class SpringDestroyingBeanJSR250Demo {
+	private File file;
+	private String name;
+	
+	@Post
+	public void afterPropertiesSet()
+	{
+		
+	}
+}

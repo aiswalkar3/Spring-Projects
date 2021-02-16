@@ -1,0 +1,38 @@
+package com.EECS.SpringMethodReplacementDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.util.StopWatch;
+
+public class MethodReplacementDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load("spring/app-context.xml");
+		context.refresh();
+		ProductTypeFormat replacedFormat = context.getBean("replacementProductTypeFormat",
+				ProductTypeFormat.class);
+		
+		ProductTypeFormat standardFormat = context.getBean("standardProductTypeFormat",
+				ProductTypeFormat.class);
+		
+		displayInfo(replacedFormat);
+		displayInfo(replacedFormat);
+	}
+	
+	private static void displayInfo(ProductTypeFormat format)
+	{
+		System.out.println(format.formatProductType("Industrial Printing Product"));
+		
+		StopWatch watch = new StopWatch();
+		watch.start("perfTest");
+		
+		for(int x=0; x < 1000000; x++)
+		{
+			String out = format.formatProductType("Domestic Cleaning Product");
+		}
+		
+		watch.stop();
+		
+		System.out.println("1000000 invocations took: "
+				+ watch.getTotalTimeMillis() + " ms");
+	}
+}

@@ -1,0 +1,7 @@
+package com.SpringBeanNamingTest;
+
+public class SpringBeanNamingTest {
+	public static void main(String[] args) {
+		
+	}
+}

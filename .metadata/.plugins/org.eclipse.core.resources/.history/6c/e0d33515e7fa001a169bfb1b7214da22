@@ -1,0 +1,10 @@
+package com.EECS.SpringApplicationContextAwareDemo;
+
+import org.springframework.context.ApplicationContextAware;
+
+public class ShutdownHookBean implements ApplicationContextAware{
+	private ApplicationContext context;
+	
+	
+	
+}

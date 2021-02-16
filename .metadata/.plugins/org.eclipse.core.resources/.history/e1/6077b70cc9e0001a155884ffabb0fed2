@@ -1,0 +1,8 @@
+package com.EECS.SpringLookupMethodInjectionDemo;
+
+import com.EECS.SpringLookupMethodInjectionDemo.PoductType;
+
+public interface MethodInjectionDemoBean {
+	ProductType getProductType();
+	
+}

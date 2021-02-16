@@ -1,0 +1,5 @@
+package com.EECS.SpringNonSingletonBeanDemo;
+
+public class Singleton {
+	
+}

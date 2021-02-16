@@ -1,0 +1,13 @@
+package com.EECS.ApplicationContextNesting;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class ApplicationContextNestingDemo {
+	public static void main(String []args)
+	{
+		GenericXmlApplicationContext parentContext = new GenericXmlApplicationContext();
+		
+		
+		
+	}
+}

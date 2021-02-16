@@ -1,0 +1,6 @@
+package com.EECS.SpringLookupMethodInjectionDemo;
+
+public class AbstractLookupDemoBean implements MethodInjectionDemoBean{
+	private ProductType productType;
+	
+}

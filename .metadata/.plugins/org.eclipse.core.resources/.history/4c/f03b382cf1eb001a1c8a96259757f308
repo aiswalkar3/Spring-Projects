@@ -1,0 +1,41 @@
+package com.EECS.SpringBeanConfigurationDemo;
+
+import java.util.Arrays;
+import java.util.Map;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.GenericApplicationContext;
+
+public class Product {
+	
+	@Configuration
+	public static class ProductConfig
+	{
+		@Bean(name = {"Product", "Industrial Product", ""})
+		public Product product()
+		{
+			return new Product();
+		}
+	}
+	
+	private String product = "Industrial Product";
+	
+	public void product()
+	{
+		System.out.println(product);
+	}
+	
+	public static void main(String[] args) {
+		GenericApplicationContext context = new AnnotationConfigApplicationContext(ProductConfig.class);
+		
+		Map<String,Product> beans = context.getBeansOfType(Product.class);
+		
+		beans.entrySet().stream().forEach(bean->System.out.println("id: " + bean.getKey() + "\n aliases: " 
+												+ Arrays.toString(context.getAliases(bean.getKey()))));
+		
+		context.close();
+	}
+	
+}

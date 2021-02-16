@@ -1,0 +1,14 @@
+package com.EECS.XMLUnitInjectionDemo;
+
+public class Product {
+	private ProductType type;
+	
+	public Product(ProductType type)
+	{
+		this.type = type;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

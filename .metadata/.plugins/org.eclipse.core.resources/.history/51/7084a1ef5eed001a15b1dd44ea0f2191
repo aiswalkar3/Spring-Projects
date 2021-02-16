@@ -1,0 +1,10 @@
+package com.EECS.SpringDependsOnDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class SpringDependsOnDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		
+	}
+}

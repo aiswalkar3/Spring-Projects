@@ -1,0 +1,15 @@
+package com.EECS.SpringMethodReplacementDemo;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MethodReplacementDemo {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+		context.load("spring/app-context.xml");
+		context.refresh();
+		ProductTypeFormat replacedFormat = context.getBean("replacementProductTypeFormat",
+				ProductTypeFormat.class);
+		
+		
+	}
+}
